@@ -36,5 +36,3 @@ class AutoriaSpider(scrapy.Spider):
                 break
             vin_code += span_text
         return vin_code
-
-
