@@ -14,6 +14,7 @@ NEWSPIDER_MODULE = 'autoria.spiders'
 
 FEED_FORMAT = 'json'
 FEED_URI = 'auto_ria.json'
+FEED_EXPORT_ENCODING = 'utf-8'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
