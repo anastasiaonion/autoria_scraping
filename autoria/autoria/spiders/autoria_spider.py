@@ -32,7 +32,7 @@ class AutoriaSpider(scrapy.Spider):
         vin_code = ''
         for vin_part in vin_code_parts:
             span_text = vin_part.css('span::text').get().strip()
-            if span_text.startswith('AUTO.RIA'):
+            if span_text.startswith(('AUTO.RIA', 'Перевірено')):
                 break
             vin_code += span_text
         return vin_code
